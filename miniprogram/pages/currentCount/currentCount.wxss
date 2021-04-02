@@ -1,0 +1,119 @@
+@import "./currentCount.skeleton.wxss";
+/* 顶部导航 */
+.topBar{
+  height:160rpx;
+  background-color:#5fb7df;
+  display:flex;
+
+}
+/* 日期 */
+.topBar .date-box{
+  width:24%;
+  position: relative;
+}
+.topBar .date-box .year{
+  height:60rpx;
+  line-height:100rpx;
+  text-align: center;
+  color:#535353e8;
+  font-size: 28rpx;
+}
+.topBar .date-box .month{
+  text-align: right;
+  height:80rpx;
+  line-height:100rpx;
+  color:black;
+  font-size: 36rpx;
+  display: flex;
+  border-right:2rpx solid #535353e8;
+
+}
+.topBar .date-box .month .font{
+  width:60%;
+}
+.topBar .date-box .month .img{
+  width:40%;
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  margin-top:14rpx;
+}
+.topBar .date-box .month .auto-img{
+  display: block;
+  width:40rpx;
+  height:40rpx;
+}
+.topBar .date-box .picker-box{
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  left:0rpx;
+  top:40rpx;
+}
+.topBar .date-box .picker-box .picker{
+  width: 100%;
+  height: 100rpx;
+  /* background:red !important; */
+  opacity: 0;
+
+
+}
+
+/* 顶部收入盒子 */
+.topBar .income-box{
+  flex:1;
+  width:24%;
+}
+.topBar .income-box .income-font{
+  height:60rpx;
+  line-height:100rpx;
+  text-align: center;
+  color:#535353e8;
+  font-size: 28rpx;
+}
+.topBar .income-box .income-num{
+  height:100rpx;
+  line-height:100rpx;
+  display:flex;
+  justify-content: center;
+}
+.topBar .income-box .income-num .big{
+  color:black;
+  font-size: 36rpx;
+}
+.topBar .income-box .income-num .small{
+  font-size: 28rpx;
+  padding-left:6rpx;
+  color:#535353e8;
+  line-height:104rpx;
+}
+
+/* 顶部支出盒子 */
+.topBar .outcome-box{
+  flex:1;
+  width:24%;
+}
+.topBar .outcome-box .outcome-font{
+  height:60rpx;
+  line-height:100rpx;
+  text-align: center;
+  color:#535353e8;
+  font-size: 28rpx;
+}
+.topBar .outcome-box .outcome-num{
+  height:100rpx;
+  line-height:100rpx;
+  display:flex;
+  justify-content: center;
+}
+.topBar .outcome-box .outcome-num .big{
+  color:black;
+  font-size: 36rpx;
+}
+.topBar .outcome-box .outcome-num .small{
+  font-size: 28rpx;
+  padding-left:6rpx;
+  line-height:104rpx;
+  color:#535353e8;
+
+}

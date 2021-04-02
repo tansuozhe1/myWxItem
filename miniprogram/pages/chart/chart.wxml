@@ -1,0 +1,47 @@
+<view class="chart">
+  <!-- 顶部搜索 -->
+  <view class="top-nav">
+    <!-- 搜索框和搜索按钮 -->
+    <view class="search">
+      <!-- 搜索框 -->
+      <view class="search-box">
+        <picker mode="date" start="2010-09-01" end="{{endTime}}" bindchange="bindDateChange"
+        fields = "{{count == 1 ? 'day' : count == 2 ? 'month' : 'year'}}" class="picker-box"
+        >
+          <view class="picker">
+            {{currentDate}}
+          </view>
+        </picker>
+      </view>
+      <!-- 搜索按钮 -->
+      <view class="search-btn" bindtap="clickSearchBtn">{{count == 1 ? '按日查询' : count == 2 ? '按月查询' : '按年查询'}}</view>
+    </view>
+  </view>
+
+  <!-- 月总收支 -->
+  <view class="budget-box">
+    <view class="income-box {{budgetType == 0 ? 'active' : ''}}" bindtap="clickBudgetBtn" data-selectindex = "0">
+      <view class="month-income">
+        <view class="text">{{count == 1 ? '日收入' : count == 2 ? '月收入' : '年收入'}}</view>
+        <view class="number">{{totalIncome}}</view>
+      </view>
+    </view>
+    <view class="outcome-box {{budgetType == 1 ? 'active' : ''}}" bindtap="clickBudgetBtn" data-selectindex = "1">
+      <view class="month-outcome">
+        <view class="text">{{count == 1 ? '日支出' : count == 2 ? '月支出' : '年支出'}}</view>
+        <view class="number">{{totalOutcome}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 图表 -->
+  <!-- 要给echart-pie这个大盒子宽高，不然图表出不来 -->
+  <view class="echart-pie">
+    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+  </view>
+
+  <!--类型详情组件-->
+  <selectType-items wx:for="{{formatData[budgetType]}}" currentData="{{item}}" wx:key="index"
+  totalIncome = "{{normalTotalIncome}}" totalOutcome = "{{normalTotalOutcome}}"
+  ></selectType-items>
+</view>

@@ -1,0 +1,79 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/5 上午10:42:46
+使用方法：
+在 E:\HTML学习资料\微信小程序\TT_come_Bookkeeping\miniprogram\pages\home\home.wxml 引入模板
+
+```
+
+```
+
+在 E:\HTML学习资料\微信小程序\TT_come_Bookkeeping\miniprogram\pages\home\home.wxss 中引入样式
+```
+
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="home-box">
+      <view class="home">
+        <view class="box">
+          <view class="surplus sk-transparent sk-text-14-2857-777 sk-text" style="background-position-x: 50%;">结余</view>
+          <view class="surplus_money sk-transparent">
+            123,123,211.
+            <view class="lastNum sk-transparent sk-text-14-2857-942 sk-text" style="background-position-x: 50%;">00</view>
+          </view>
+        </view>
+        <view class="budget">
+          <view class="left sk-transparent" style="border: none;">收入
+            <text class="leftFont sk-transparent">4532345.<text class="last sk-transparent sk-text-14-2857-6 sk-text">00</text></text>
+          </view>
+          <view class="right sk-transparent">支出
+            <text class="rightFont sk-transparent">24345274.<text class="last sk-transparent sk-text-14-2857-984 sk-text">00</text></text>
+          </view>
+        </view>
+        <view class="date sk-transparent">2021
+          <image class="img sk-image"></image>
+        </view>
+        <view class="datePick sk-image" end="2022-03-01" fields="year" mode="date" start="2010-09-01">
+          <view class="picker sk-transparent sk-text-14-2857-19 sk-text">
+            当前选择
+          </view>
+        </view>
+      </view>
+      <view class="dataList">
+        <view class="title" style="border: none;">
+          <view class="sk-transparent sk-text-30-0000-477 sk-text">月份</view>
+          <view class="sk-transparent sk-text-30-0000-860 sk-text">收入</view>
+          <view class="sk-transparent sk-text-30-0000-479 sk-text">支出</view>
+          <view class="sk-transparent sk-text-30-0000-836 sk-text">结余</view>
+        </view>
+        <view class="list" style="border: none;">
+          <view class="month moneyData sk-transparent sk-text-30-0000-419 sk-text" style="background-position-x: 50%;">01月</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-107 sk-text" style="background-position-x: 50%;">84786</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-882 sk-text" style="background-position-x: 50%;">35145</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-199 sk-text" style="background-position-x: 50%;">33333</view>
+        </view>
+        <view class="list" style="border: none;">
+          <view class="month moneyData sk-transparent sk-text-30-0000-820 sk-text" style="background-position-x: 50%;">02月</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-13 sk-text" style="background-position-x: 50%;">8423786</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-334 sk-text" style="background-position-x: 50%;">3512345</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-635 sk-text" style="background-position-x: 50%;">3332333</view>
+        </view>
+        <view class="list" style="border: none;">
+          <view class="month moneyData sk-transparent sk-text-30-0000-715 sk-text" style="background-position-x: 50%;">02月</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-198 sk-text" style="background-position-x: 50%;">8423786</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-354 sk-text" style="background-position-x: 50%;">3512345</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-776 sk-text" style="background-position-x: 50%;">3332333</view>
+        </view>
+        <view class="list" style="border: none;">
+          <view class="month moneyData sk-transparent sk-text-30-0000-957 sk-text" style="background-position-x: 50%;">02月</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-131 sk-text" style="background-position-x: 50%;">8423786</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-800 sk-text" style="background-position-x: 50%;">3512345</view>
+          <view class="moneyData sk-transparent sk-text-27-5000-990 sk-text" style="background-position-x: 50%;">3332333</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

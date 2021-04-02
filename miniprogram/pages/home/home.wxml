@@ -1,0 +1,43 @@
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="home-box" wx:else>
+  <view class="home">
+    <view class="box">
+      <view class="surplus">结余</view>
+      <view class="surplus_money">
+        {{yearBudget.totalSurplus.first}}<view class="lastNum">{{yearBudget.totalSurplus.last}}</view>
+      </view>
+    </view>
+    <view class="budget">
+      <view class="left">收入
+        <text class="leftFont">{{yearBudget.totalIncome.first}}<text class="last">{{yearBudget.totalIncome.last}}</text>
+        </text>
+      </view>
+      <view class="right">支出
+        <text class="rightFont">{{yearBudget.totalOutcome.first}}<text class="last">{{yearBudget.totalOutcome.last}}</text></text>
+      </view>
+    </view>
+    <view class="date">{{currentYear}}<image src="../../images/triangle.png" class="img"></image>
+    </view>
+    <picker mode="date" start="2010-09-01" end="{{currentYear}}" class="datePick" fields="year" bindchange="chageYear" >
+      <view class="picker">
+        当前选择
+      </view>
+    </picker>
+  </view>
+  <view class="dataList">
+    <view class="title">
+      <view>月份</view>
+      <view>收入</view>
+      <view>支出</view>
+      <view>结余</view>
+    </view>
+    <view class="list" wx:for="{{yearData}}" wx:key="index">
+      <view class="month moneyData">{{item.month}}</view>
+      <view class="moneyData">{{item.income}}</view>
+      <view class="moneyData">{{item.outcome}}</view>
+      <view class="moneyData">{{item.surplus}}</view>
+    </view>
+    
+  </view>
+</view>

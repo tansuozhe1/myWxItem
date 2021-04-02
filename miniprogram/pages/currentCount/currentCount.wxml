@@ -1,0 +1,39 @@
+<import src="currentCount.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="bigBox" wx:else>
+  <!-- 顶部导航栏 -->
+  <view class="topBar">
+    <view class="date-box">
+      <view class="year">{{selectYearMonth.year}}年</view>
+      <view class="month">
+        <view class="font">{{selectYearMonth.month}}月</view>
+        <view class="img">
+          <image src="../../images/triangle.png" class=".auto-img"></image>
+        </view>
+      </view>
+      <picker class="picker-box" mode="date" start="2015-09-01" end="2021-09-01" bindchange="selectDate" fields = "month">
+      <view class="picker">
+        当前选择: 
+      </view>
+    </picker>
+    </view>
+    <view class="income-box">
+      <view class="income-font">收入</view>
+      <view class="income-num">
+        <text class="big">{{monthTotalIncome.incomeFirstNumber}}</text>
+        <text class="small">.{{monthTotalIncome.incomeLastNumber}}</text>
+      </view>
+    </view>
+    <view class="outcome-box">
+      <view class="outcome-font">支出</view>
+      <view class="outcome-num">
+        <text class="big">{{monthTotalOutcome.outcomeFirstNumber}}</text>
+        <text class="small">.{{monthTotalOutcome.outcomeLastNumber}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- items列表组件 -->
+  <account-items class="components" currentData="{{item}}" wx:for="{{currentData}}" wx:key="index"></account-items>
+</view>
+

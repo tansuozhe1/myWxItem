@@ -1,0 +1,75 @@
+<import src="mine.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="mine-box" wx:else>
+  <!-- 背景盒子 -->
+  <view class="top-bgBox">
+    <view class="icon-name">
+      <view class="icon-box">
+        <image src="{{userInfo.avatarUrl}}" mode="widthFix" class="auto-img"></image>
+      </view>
+      <view class="name">{{userInfo.nickName}}</view>
+    </view>
+
+    <!-- 记账信息 -->
+    <view class="bookkingStatus">
+      <view class="bookkingDay">
+        <view class="dataNum">{{totalBookkingDay}}</view>
+        <view class="text">总记账天数</view>
+      </view>
+
+      <view class="totalSurplus">
+        <view class="dataNum">{{totalSurplus}}</view>
+        <view class="text">总结余</view>
+      </view>
+
+      <view class="bokkingCount">
+        <view class="dataNum">{{totalBookkingNum}}</view>
+        <view class="text">总记账笔数</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 功能列表 -->
+  <view class="functionList">
+      <view class="onTimeRemind">
+        <view class="icon">
+          <image src="{{iconPicture[0]}}" mode="widthFix" class="auto-img"></image>
+        </view>
+        <view class="right">
+          <view class="text">定时提醒</view>
+          <view class="arrow">
+            <image src="{{iconPicture[3]}}" mode="widthFix" class="auto-img"></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="onTimeRemind">
+        <view class="icon">
+          <image src="{{iconPicture[1]}}" mode="widthFix" class="auto-img"></image>
+        </view>
+        <view class="right">
+          <view class="text">意见反馈</view>
+          <view class="arrow">
+            <image src="{{iconPicture[3]}}" mode="widthFix" class="auto-img"></image>
+          </view>
+        </view>
+      </view>
+
+      <view class="about">
+        <view class="icon">
+          <image src="{{iconPicture[2]}}" mode="widthFix" class="auto-img"></image>
+        </view>
+        <view class="right">
+          <view class="text">关于TT来记账</view>
+          <view class="arrow">
+            <image src="{{iconPicture[3]}}" mode="widthFix" class="auto-img"></image>
+          </view>
+        </view>
+      </view>
+
+  </view>
+
+  <!-- 分享按钮 -->
+  <!-- <view class="shareBtn">推荐TT来记账给好友</view> -->
+  <button open-type="share" class="shareBtn">推荐TT来记账给好友</button>
+</view>

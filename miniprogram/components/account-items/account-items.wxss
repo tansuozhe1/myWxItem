@@ -1,0 +1,175 @@
+.account-items{
+  width: 100%;
+  border-bottom:2rpx solid #ccc;
+  background-color:#fff;
+  overflow: hidden;
+}
+
+/* 每天记录顶部的日期收支盒子 */
+.account-items .topBox{
+  width: 92%;
+  margin:20rpx auto;
+  display: flex;
+  justify-content: space-between;
+  height:50rpx;
+}
+.account-items .topBox .date-box{
+  width:35%;
+  color:#535353e8;
+  font-size: 28rpx;
+  display: flex;
+}
+.account-items .topBox .date-box .date{
+  margin-right:10rpx;
+  height:50rpx;
+  line-height: 50rpx;
+}
+.account-items .topBox .date-box .day{
+  margin-right:10rpx;
+  height:50rpx;
+  line-height: 50rpx;
+}
+.account-items .topBox .budget{
+  flex:1;
+  display: flex;
+  color:#535353e8;
+  font-size: 28rpx;
+  justify-content: space-between;
+}
+.account-items .topBox .budget .income-box{
+  display: flex;
+  height:50rpx;
+  line-height: 50rpx;
+}
+.account-items .topBox .budget .outcome-box{
+  display: flex;
+  height:50rpx;
+  line-height: 50rpx;
+}
+
+
+/* 每一条记录 */
+.account-items .items-box{
+  width:92%;
+  margin:0rpx auto;
+  height:120rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.account-items .items-box:last-child{
+  /* height:140rpx;
+  line-height:140rpx; */
+  margin-bottom:16rpx;
+}
+
+/* 图标盒子 */
+.account-items .items-box .icon-box{
+  width:15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-items .items-box .icon-box .bg-box{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  /* background-color:#bdbcbc; */
+  background:#05a9f5;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.account-items .items-box .icon-box .auto-img{
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* 内容盒子 */
+.account-items .items-box .info-box{
+  flex:1;
+  padding-left:20rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom:2rpx solid #ccc;
+}
+.account-items .items-box:last-child .info-box{
+  border:0rpx;
+}
+.account-items .items-box .info-box .info{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+}
+.account-items .items-box .info-box .info .selectType{
+  width: 40%;
+}
+.account-items .items-box .info-box .info .payType{
+  width: 40%;
+  font-size: 32rpx;
+  color:#fff;
+  text-align: center;
+  background:#5fb7df;
+  border-radius:20rpx;
+  margin-top:8rpx;
+  height:56rpx;
+  line-height:56rpx;
+}
+.account-items .items-box .info-box .comment{
+  font-size: 28rpx;
+  color:#535353e8;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width:380rpx;
+}
+
+/* 金额盒子 */
+.account-items .items-box .money-box{
+  width:25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom:2rpx solid #ccc;
+
+}
+.account-items .items-box .money-box .minus.fontRed{
+  display:block;
+}
+.account-items .items-box .money-box .minus.fontGreen{
+  display:none;
+}
+.account-items .items-box .money-box.fontRed{
+  color:#d16347;
+}
+.account-items .items-box .money-box.fontGreen{
+  color:#2aba30;
+}
+.account-items .items-box:last-child .money-box{
+  border:0rpx;
+}
+
+/* 支付类型背景颜色 */
+.account-items .items-box .info-box .info .payType.xj{
+  background-color:#f01a33;
+  color:white;
+}
+.account-items .items-box .info-box .info .payType.zfb{
+  background-color:#0aaaf5;
+  color:white;
+}
+.account-items .items-box .info-box .info .payType.wx{
+  background-color:#23d96e;
+  color:white;
+}
+.account-items .items-box .info-box .info .payType.xyk{
+  background-color:#fad221;
+  color:white;
+}
+.account-items .items-box .info-box .info .payType.cxk{
+  background-color:#0df2fa;
+  color:white;
+}

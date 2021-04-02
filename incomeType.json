@@ -1,0 +1,36 @@
+{
+    "name": "工资",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/o1.png",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/oa1.png",
+    "desc": "gz"
+}
+{
+    "name": "兼职",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/o2.png",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/oa2.png",
+    "desc": "jz"
+}
+{
+    "name": "理财",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/o3.png",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/oa3.png",
+    "desc": "lc"
+}
+{
+    "name": "红包",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/o4.png",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/oa4.png",
+    "desc": "hb"
+}
+{
+    "name": "分红",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/o5.png",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/oa5.png",
+    "desc": "fh"
+}
+{
+    "name": "其他",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/o6.png",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/oa6.png",
+    "desc": "qt"
+}

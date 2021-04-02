@@ -1,0 +1,224 @@
+@import "./bookkeeping.skeleton.wxss";
+.top-box{
+  height: 100rpx;
+  background:#2b809e;
+}
+.bookkeeping-bg{
+  width: 90%;
+  /* height:400rpx; */
+  background-color:#fff;
+  border-radius:30rpx;
+  margin:-40rpx auto;
+  overflow:hidden;
+}
+.bookkeeping-bg .title{
+  width:200rpx;
+  height:60rpx;
+  border:1px solid #5fb7df;
+  border-radius:30rpx;
+  overflow:hidden;
+  margin:40rpx auto 0rpx;
+  display:flex;
+  justify-content: space-between;
+}
+.income{
+  width:50%;
+  text-align:center;
+  height:100%;
+  line-height:60rpx;
+}
+.outcome{
+  width:50%;
+  text-align:center;
+  height:100%;
+  line-height:60rpx;
+}
+.active{
+  background:#5fb7df;
+}
+
+.type-item{
+  width:90%;
+  height:340rpx;
+  margin:30rpx auto 20rpx;
+  /* overflow:hidden; */
+}
+.swiper-item-box{
+  width:100%;
+  height:100%;
+}
+.swiper-items{
+  display:flex;
+  flex-wrap:wrap;
+  align-content: flex-start;
+}
+.swiper-item{
+  width:20%;
+  margin-bottom: 20rpx;
+  text-align:center;
+}
+.swiper-item .icon{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+  overflow: hidden;
+  /* border:1px solid black; */
+  margin:0rpx auto 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#ccc;
+}
+.swiper-item .icon .auto-img{
+  display: block;
+  width:60%;
+  height:60%;
+}
+.swiper-item .text{
+  font-size: 28rpx;
+}
+.swiper-item .icon.active{
+  background:#03dcf8;
+}
+.payType{
+  width:90%;
+  height:180rpx;
+  border-radius:30rpx;
+  background:#fff;
+  margin:80rpx auto 40rpx;
+  overflow:hidden;
+}
+.payType .title{
+  width: 94%;
+  height:80rpx;
+  line-height: 80rpx;
+  margin:0rpx auto;
+  border-bottom:1px solid #ccc;
+}
+.payType .content{
+  height:calc(180rpx - 80rpx - 2rpx);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.payType .content .pay-item{
+  height:60rpx;
+  line-height: 60rpx;
+  width:15%;
+  text-align:center;
+  border-radius:20rpx;
+  font-size: 28rpx;
+  background:#ddd;
+}
+.payType .content .pay-item.active0{
+  background-color:#f01a33;
+  color:white;
+}
+.payType .content .pay-item.active1{
+  background-color:#0aaaf5;
+  color:white;
+}
+.payType .content .pay-item.active2{
+  background-color:#23d96e;
+  color:white;
+}
+.payType .content .pay-item.active3{
+  background-color:#fad221;
+  color:white;
+}
+.payType .content .pay-item.active4{
+  background-color:#0df2fa;
+  color:white;
+}
+
+.date-account{
+  width:90%;
+  /* height:240rpx; */
+  background-color:#fff;
+  border-radius:30rpx;
+  margin:0rpx auto;
+}
+.date-account .date{
+  border-bottom:2rpx solid #ddd;
+  display: flex;
+  height:80rpx;
+  line-height:80rpx;
+
+}
+.date-account .date .date-text{
+  margin-left:14rpx;
+  margin-right:20rpx;
+}
+.date-account .date .picker{
+  font-size: 28rpx;
+  color:#999;
+}
+.date-account .account{
+  border-bottom:2rpx solid #ddd;
+  display: flex;
+  height:80rpx;
+  line-height:80rpx;
+}
+.date-account .account .account-text{
+  margin-left:14rpx;
+  margin-right:20rpx;
+}
+.account-content{
+  display: flex;
+  align-items: center;
+}
+.account-content .placeholder-name{
+  font-size: 28rpx;
+  color:#999;
+}
+.date-account .remark{
+  display: flex;
+  height:120rpx;
+  margin-top:30rpx;
+}
+.date-account .remark .remark-text{
+  margin-left:14rpx;
+  margin-right:10rpx;
+  width:80rpx;
+}
+.date-account .remark .remark-content{
+  height: 100%;
+  width: 80%;
+  overflow:hidden;
+}
+.date-account .remark .remark-content .textArea{
+  width: 100%;
+  height: 90%;
+  color:#535353e8;
+  font-size: 28rpx;
+}
+
+/* 按钮盒子 */
+.btn-box{
+  position: relative;
+  width:90%;
+  margin:40rpx auto;
+}
+.btn-box .btn{
+  height:100rpx;
+  background:#5fb7df;
+  font-size: 36rpx;
+  border-radius:30rpx;
+  text-align:center;
+  line-height:100rpx;
+}
+.btn-box .authorize{
+  position:absolute;
+  left:0rpx;
+  top:0rpx;
+  height:100rpx !important;
+  border-radius:30rpx;
+  width: 100% !important;
+  opacity:0;
+}
+.abc{
+  color:#000 !important;
+}
+.btn-box .btn:active{
+  background:#2b809e !important;
+}

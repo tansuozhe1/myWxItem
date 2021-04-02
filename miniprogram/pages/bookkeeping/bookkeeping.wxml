@@ -1,0 +1,76 @@
+<import src="bookkeeping.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="account-box" wx:else>
+  <view class="top-box"></view>
+  <view class="bookkeeping-bg">
+    <view class="title">
+      <view class="income {{index == currentIndex ? 'active' : ''}}" bindtap="clickIncom" wx:for="{{btnType}}" wx:key="index"
+      data-index="{{index}}"
+      >{{item.name}}</view>
+    </view>
+  <!-- 轮播图 -->
+    <view class="type-item">
+      <swiper class="swiper-item-box" indicator-dots="{{getIconData.length > 1 ? true:false}}" indicator-color="#ccc" indicator-active-color="#5fb7df" circular="{{true}}">
+            <swiper-item class="swiper-items" wx:for="{{getIconData}}" wx:key="index">
+              
+              <view class="swiper-item" wx:for="{{item}}" wx:key="i" wx:for-item="val"
+              wx:for-index="i" bindtap="clickIcon" data-pageIndex="{{index}}" data-inconIndex="{{i}}"  data-iconType="{{val.desc}}"
+              >
+                <view class="icon {{val.isActive ? 'active' : ''}}">
+                  <image class="auto-img" src="{{val.url}}"></image>
+                </view>
+                <view class="text">{{val.name}}</view>
+              </view>
+              
+            </swiper-item>
+        </swiper>
+    </view>
+  </view>
+  <!-- 账户选择 -->
+  <view class="payType">
+      <view class="title">支付方式</view>
+      <view class="content">
+        <view class="pay-item {{selectPayIndex == index ? 'active'+index : ''}}" 
+        wx:for="{{payType}}" wx:key="index" data-selectIndex="{{index}}" bindtap="selectType"
+        >{{item.name}}</view>
+      </view>
+  </view>
+  <!-- 日期金额数据 -->
+  <view class="date-account">
+    <view class="date">
+      <view class="date-text">日期</view>
+      <picker mode="date" start="2015-09-01" end="{{pickerDate}}" data-key="currentDate" bindchange="setValue">
+        <view class="picker abc">
+          {{currentDate}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="account">
+      <view class="account-text">金额</view>
+      <view class="account-content">
+        <input class="weui-input" type="digit" placeholder="请输入金额" placeholder-class="placeholder-name" maxlength="12" data-key="money"
+        bindblur="setValue" value="{{money}}"
+        />
+      </view>
+    </view>
+  
+    <view class="remark">
+      <view class="remark-text">备注</view>
+      <view class="remark-content">
+        <textarea class="textArea" maxlength="50" bindinput="setValue"
+        data-key = "comment" value="{{comment}}"
+        />
+      </view>
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="btn-box">
+    <view class="btn" bindtap="clickBtn">保存</view>
+    <button class="authorize" open-type="getUserInfo" bindgetuserinfo='bindgetuserinfo' wx:if='{{!isAuthorize}}'
+    >授权</button>
+  </view>
+</view>
+
+
+

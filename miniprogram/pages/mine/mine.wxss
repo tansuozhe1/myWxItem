@@ -1,0 +1,139 @@
+@import "./mine.skeleton.wxss";
+.mine-box .top-bgBox{
+  width: 100%;
+  /* height:600rpx; */
+  background-color:#5fb7df;
+  overflow: hidden;
+}
+.mine-box .top-bgBox .icon-name{
+  width:300rpx;
+  height:240rpx;
+  margin:60rpx auto 0rpx;
+}
+.mine-box .top-bgBox .icon-name .icon-box{
+  width:160rpx;
+  height:160rpx;
+  background:white;
+  border-radius:50%;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0rpx auto;
+}
+.mine-box .top-bgBox .icon-name .icon-box .auto-img{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.mine-box .top-bgBox .icon-name .name{
+  color:black;
+  font-size: 32rpx;
+  text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+}
+
+/* 记账信息 */
+.mine-box .bookkingStatus{
+  width: 90%;
+  height: 160rpx;
+  margin:0rpx auto 40rpx;
+  display: flex;
+}
+.mine-box .bookkingStatus .bookkingDay,.bokkingCount{
+  width: 30%;
+  height: 160rpx;
+  line-height: 160rpx;
+}
+.mine-box .bookkingStatus .totalSurplus{
+  flex:1;
+  height: 160rpx;
+  line-height: 160rpx;
+}
+.mine-box .bookkingStatus .dataNum{
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height:160rpx;
+  color:black;
+  font-size: 40rpx;
+}
+.mine-box .bookkingStatus .text{
+  width: 100%;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align: center;
+  color:#535353e8;
+  font-size: 32rpx;
+}
+
+/* 功能列表 */
+.mine-box .functionList{
+  width: 100%;
+  background-color:#fff;
+  border-top:2rpx solid #ccc;
+  border-bottom:2rpx solid #ccc;
+  margin:40rpx 0rpx 60rpx;
+}
+.mine-box .functionList .onTimeRemind,.feedback,.about{
+  display: flex;
+  height:100rpx;
+  align-items: center;
+}
+.mine-box .functionList .icon{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0rpx 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mine-box .functionList .icon .auto-img{
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+}
+.mine-box .functionList .right{
+  flex:1;
+  height: 100%;
+  border-bottom:2rpx solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mine-box .functionList .about .right {
+  border:0rpx;
+}
+.mine-box .functionList .right .text{
+  flex:1;
+}
+.mine-box .functionList .right .arrow{
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right:20rpx;
+}
+.mine-box .functionList .right .arrow .auto-img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+}
+
+/* 分享按钮 */
+.shareBtn{
+  width: 90% !important;
+  height: 100rpx !important;
+  line-height:70rpx;
+  border-radius:40rpx;
+  background:#5fb7df;
+  text-align: center;
+  margin:0rpx auto;
+}
+.shareBtn:active{
+  background-color:#2b809e;
+}

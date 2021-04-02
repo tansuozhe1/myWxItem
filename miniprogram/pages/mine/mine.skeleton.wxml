@@ -1,0 +1,81 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/11 下午3:12:28
+使用方法：
+在 E:\HTML学习资料\微信小程序\TT_come_Bookkeeping\miniprogram\pages\mine\mine.wxml 引入模板
+
+```
+<import src="mine.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\HTML学习资料\微信小程序\TT_come_Bookkeeping\miniprogram\pages\mine\mine.wxss 中引入样式
+```
+@import "./mine.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="mine-box">
+      <view class="top-bgBox">
+        <view class="icon-name">
+          <view class="icon-box">
+            <image class="auto-img sk-image" mode="widthFix" style="height: 80px;"></image>
+          </view>
+          <view class="name sk-transparent sk-text-30-0000-696 sk-text" style="background-position-x: 50%;">探索者一号</view>
+        </view>
+        <view class="bookkingStatus">
+          <view class="bookkingDay">
+            <view class="dataNum sk-transparent sk-text-37-5000-27 sk-text" style="background-position-x: 50%;">754</view>
+            <view class="text sk-transparent sk-text-23-3333-116 sk-text" style="background-position-x: 50%;">总记账天数</view>
+          </view>
+          <view class="totalSurplus">
+            <view class="dataNum sk-transparent sk-text-37-5000-501 sk-text" style="background-position-x: 50%;">757121124.52</view>
+            <view class="text sk-transparent sk-text-23-3333-904 sk-text" style="background-position-x: 50%;">总结余</view>
+          </view>
+          <view class="bokkingCount">
+            <view class="dataNum sk-transparent sk-text-37-5000-747 sk-text" style="background-position-x: 50%;">7574</view>
+            <view class="text sk-transparent sk-text-23-3333-685 sk-text" style="background-position-x: 50%;">总记账笔数</view>
+          </view>
+        </view>
+      </view>
+      <view class="functionList" style="border: none;">
+        <view class="onTimeRemind">
+          <view class="icon">
+            <image class="auto-img sk-image" mode="widthFix" style="height: 30px;"></image>
+          </view>
+          <view class="right" style="border: none;">
+            <view class="text sk-transparent sk-text-14-2857-965 sk-text">定时提醒</view>
+            <view class="arrow">
+              <image class="auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+            </view>
+          </view>
+        </view>
+        <view class="onTimeRemind">
+          <view class="icon">
+            <image class="auto-img sk-image" mode="widthFix" style="height: 30px;"></image>
+          </view>
+          <view class="right" style="border: none;">
+            <view class="text sk-transparent sk-text-14-2857-646 sk-text">意见反馈</view>
+            <view class="arrow">
+              <image class="auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+            </view>
+          </view>
+        </view>
+        <view class="onTimeRemind">
+          <view class="icon">
+            <image class="auto-img sk-image" mode="widthFix" style="height: 30px;"></image>
+          </view>
+          <view class="right" style="border: none;">
+            <view class="text sk-transparent sk-text-14-2857-490 sk-text">关于TT来记账</view>
+            <view class="arrow">
+              <image class="auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="shareBtn sk-transparent sk-text-30-0000-620 sk-text" style="background-position-x: 50%;">推荐TT来记账给好友</view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,32 @@
+<view class="selectType-items">
+  <!-- 每一个item -->
+  <view class="items-box">
+    <!-- 左侧小图标 -->
+    <view class="icons">
+      <image src="{{currentData.activeUrl}}" mode="widthFix" class="auto-img"></image>
+    </view>
+
+    <!-- 中间进度条 -->
+    <view class="info">
+      <view class="name">
+        <view class="text">{{currentData.name}}</view>
+        <view class="percent">{{percent}}%</view>
+        <view class="money">￥{{currentData.money}}</view>
+      </view>
+      <view class="process-account">
+        <view class="process-bar">
+          <view class="dynamic" style="background-color:{{currentData.color}};width:{{400*percent/100}}rpx"></view>
+        </view>
+        <view class="account">{{currentData.count}}笔</view>
+      </view>
+    </view>
+
+    <!-- 右侧箭头 -->
+    <view class="arrow">
+      <image src="../../images/arrow.png" class="auto-img"></image>
+    </view>
+  </view>
+
+  
+  
+</view>

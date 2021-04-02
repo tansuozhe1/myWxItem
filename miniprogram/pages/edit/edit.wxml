@@ -1,0 +1,66 @@
+<view class="edit-box">
+  <!-- 背景盒子 -->
+  <view class="top-bgBox">
+    <view class="icon-name">
+      <view class="icon-box">
+        <image src="{{collectData.selectIcon.url}}" mode="widthFix" class="auto-img"></image>
+      </view>
+      <view class="name">{{collectData.selectIcon.name}}</view>
+    </view>
+  </view>
+
+  <!-- 内容盒子 -->
+  <view class="content-box">
+    <!-- 类型 -->
+    <view class="type">
+      <view class="text">支付类型</view>
+      <view class="info">{{collectData.selectBookkingType}}</view>
+    </view>
+
+    <!-- 支出类型 -->
+    <view class="pay-type">
+      <view class="text">支付方式</view>
+      <view class="info">{{collectData.selectPayType.name}}</view>
+    </view>
+
+    <!-- 金额 -->
+    <view class="money">
+      <view class="text">金额</view>
+      <view class="info">
+        <input type="digit" value="{{money}}" disabled="{{isDisable}}"
+        bindblur="setValue" maxlength="12" data-key="money"
+        />
+      </view>
+    </view>
+
+    <!-- 日期 -->
+    <view class="date">
+      <view class="text">日期</view>
+      <view class="info">
+        <picker class="picker-box" mode="date" start="2015-09-01" end="{{formatDate}}" bindchange="setValue" disabled="{{isDisable}}" value='{{formatDate}}'
+        data-key="currentDate"
+        >
+          <view class="picker">
+            {{showDate}}
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 备注 -->
+    <view class="comment">
+      <view class="text">备注</view>
+      <view class="info">
+        <textarea class='textarea-box' maxlength='50' value="{{comment}}"
+        disabled="{{isDisable}}" bindinput="setValue" data-key = "comment"
+        />
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="bottomEdit-box" wx:if="{{isDisable}}">
+  <view class="edit" bindtap="clickEdit">编辑</view>
+  <view class="delete" bindtap="clickDeleteBtn">删除</view>
+</view>
+<view class="saveBtn" wx:else bindtap="clickSaveBtn">保存</view>

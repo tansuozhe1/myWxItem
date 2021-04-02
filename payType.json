@@ -1,0 +1,96 @@
+{
+    "name": "餐饮",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia1.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i1.png",
+    "desc": "cy"
+}
+{
+    "name": "服饰",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia2.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i2.png",
+    "desc": "fs"
+}
+{
+    "name": "购物",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia3.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i3.png",
+    "desc": "gw"
+}
+{
+    "name": "交通",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia4.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i4.png",
+    "desc": "jt"
+}
+{
+    "name": "零食",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia5.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i5.png",
+    "desc": "ls"
+}
+{
+    "name": "旅行",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia6.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i6.png",
+    "desc": "lx"
+}
+{
+    "name": "水果",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia7.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i7.png",
+    "desc": "sg"
+}
+{
+    "name": "娱乐",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia8.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i8.png",
+    "desc": "yl"
+}
+{
+    "name": "住房",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia9.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i9.png",
+    "desc": "zf"
+}
+{
+    "name": "办公",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia10.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i10.png",
+    "desc": "bg"
+}
+{
+    "name": "宠物",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia11.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i11.png",
+    "desc": "cw"
+}
+{
+    "name": "健康",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia12.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i12.png",
+    "desc": "jk"
+}
+{
+    "name": "社交",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia13.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i13.png",
+    "desc": "sj"
+}
+{
+    "name": "维修",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia14.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i14.png",
+    "desc": "wx"
+}
+{
+    "name": "学习",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia15.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i15.png",
+    "desc": "xx"
+}
+{
+    "name": "其他",
+    "activeUrl": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/ia16.png",
+    "url": "cloud://tt-dev-0g77gqu2cdfe3967.7474-tt-dev-0g77gqu2cdfe3967-1305099541/icon/i16.png",
+    "desc": "qt"
+}

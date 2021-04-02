@@ -1,0 +1,109 @@
+.selectType-items{
+  width: 100%;
+  background:#fff;
+}
+.selectType-items .items-box{
+  width: 90%;
+  height:120rpx;
+  line-height:120rpx;
+  margin:0rpx auto;
+  border-bottom:2rpx solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.selectType-items .items-box:last-child{
+  border-bottom:0rpx;
+}
+.selectType-items .items-box .icons{
+  width: 80rpx;
+  height:80rpx;
+  background:#05a9f5;
+  border-radius:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:20rpx;
+}
+.selectType-items .items-box .icons .auto-img{
+  display: block;
+  width:40rpx;
+  height:40rpx;
+}
+
+/* 中间进度条和名称 */
+.selectType-items .items-box .info{
+  flex:1;
+  height:120rpx;
+}
+.selectType-items .items-box .info .name{
+  height:60rpx;
+  font-size: 28rpx;
+  display: flex;
+}
+.selectType-items .items-box .info .name .text{
+  width: 25%;
+  text-align: left;
+  height:60rpx;
+  line-height: 60rpx;
+
+}
+.selectType-items .items-box .info .name .percent{
+  width: 25%;
+  text-align: left;
+  height:60rpx;
+  line-height: 60rpx;
+
+}
+.selectType-items .items-box .info .name .money{
+  flex: 1;
+  text-align: right;
+  height:60rpx;
+  line-height: 60rpx;
+  color:red;
+}
+.selectType-items .items-box .info .process-account{
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.selectType-items .items-box .info .process-account .process-bar{
+  width: 400rpx;
+  height:20rpx;
+  border-radius:12rpx;
+  background:#ccc;
+  margin-top:12rpx;
+  overflow: hidden;
+  position: relative;
+}
+.selectType-items .items-box .info .process-account .process-bar .dynamic{
+  position: absolute;
+  left:0rpx;
+  top:0rpx;
+  width:0rpx;
+  height:20rpx;
+  background-color:#ccc;
+  transition:width .5s linear,background-color .5s linear;
+}
+.selectType-items .items-box .info .process-account .account{
+  flex:1;
+  text-align:right;
+  line-height:40rpx;
+  color:#535353e8 ;
+  font-size: 28rpx;
+}
+
+/* 右侧箭头*/
+.selectType-items .items-box .arrow{
+  width: 10%;
+  height:100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+
+}
+.selectType-items .items-box .arrow .auto-img{
+  display: block;
+  width:40rpx;
+  height:40rpx;
+  margin-right:-10rpx;
+}

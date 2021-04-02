@@ -1,0 +1,51 @@
+<view class="account-items">
+  <!-- 日期收支 -->
+  <view class="topBox">
+    <view class="date-box">
+      <view class="date">
+        {{currentYearData[0].monthDay}}
+      </view>
+      <view class="day">{{currentYearData[0].day}}</view>
+    </view>
+    <view class="budget">
+      <view class="income-box">
+        <view class="font">收入：</view>
+        <view class="num">{{currentYearData[0].totalIncome}}</view>
+      </view>
+      <view class="outcome-box">
+        <view class="font">支出：</view>
+        <view class="num">{{currentYearData[0].totalOutcome}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 每一个项目 -->
+  <view class="items-box" wx:for="{{currentYearData}}" wx:key="index" bindtap="clickItems" data-selectId = '{{item._id}}'>
+    <!-- 小图标 -->
+    <view class="icon-box">
+      <view class="bg-box">
+        <image src="{{item.selectIcon.activeUrl}}" class="auto-img" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <!-- 类型盒子 -->
+      <view class="info-box">
+        <view class="info">
+          <view class="selectType">{{item.selectIcon.name}}</view>
+          <view class="payType {{item.selectPayType.type}}">{{item.selectPayType.name}}</view>
+        </view>
+        <view class="comment">{{item.selectComment}}</view>
+      </view>
+
+      <!-- 收支金额盒子 -->
+      <view class="money-box  {{item.moneyColor}}">
+        <view class="minus {{item.moneyColor}}">-</view>
+        ￥{{item.selectMoney}}
+      </view>
+  </view>
+
+  
+  
+</view>
+
+

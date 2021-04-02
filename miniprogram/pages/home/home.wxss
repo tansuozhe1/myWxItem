@@ -1,0 +1,125 @@
+@import "./home.skeleton.wxss";
+.home{
+  height: 380rpx;
+  background-color:#5fb7df;
+  overflow: hidden;
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.home .box{
+  width:380rpx;
+  height:200rpx;
+  /* border:1px solid red; */
+  /* position:absolute;
+  left:50%;
+  top:40rpx;
+  transform:translateX(-50%); */
+}
+.box .surplus{
+  font-size: 32rpx;
+  /* border:1px solid red; */
+  text-align:center;
+  /* color:#383737; */
+  color:#535353e8;
+}
+.box .surplus_money{
+  margin-top:40rpx;
+  font-size: 48rpx;
+  text-align:center;
+}
+.box .surplus_money .lastNum{
+  font-size: 36rpx;
+  display: inline-block;
+}
+.budget{
+  margin-top:40rpx;
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  color:#535353e8;
+
+}
+.budget .left{
+  width: 50%;
+  border-right:1px solid black;
+  padding-left:20rpx;
+  text-align:center;
+
+}
+.budget .left .leftFont{
+  font-size: 36rpx;
+  color:black;
+  /* display: inline-block; */
+}
+.budget .right .rightFont{
+  font-size: 36rpx;
+  color:black;
+}
+.budget .right{
+  width: 50%;
+  /* padding-left: 40rpx; */
+  text-align:center;
+}
+.budget .last{
+  font-size: 28rpx;
+}
+.home .date{
+  position:absolute;
+  right:40rpx;
+  top:20%;
+  font-size: 28rpx;
+  width: 130rpx;
+  height: 44rpx;
+  display: flex;
+  /* border:1px solid red; */
+}
+.date .img{
+  width: 28rpx;
+  height:28rpx;
+  margin-top:6rpx;
+  margin-left:8rpx;
+}
+
+.home .datePick{
+  width: 130rpx;
+  height: 44rpx;
+  /* border:1px solid red; */
+  position: absolute;
+  right:40rpx;
+  top:20%;
+  opacity: 0;
+}
+.home-box .dataList{
+  background-color:#fff;
+}
+.dataList .title{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  color:#707070;
+  font-size:32rpx;
+  border-bottom: 1px solid #9b9b9b;
+  height:80rpx;
+  line-height:80rpx;
+}
+.dataList .list{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  color:black;
+  font-size:32rpx;
+  border-bottom: 1px solid #9b9b9b;
+  height:80rpx;
+  line-height:80rpx;
+}
+.dataList .list .month{
+  color:#707070;
+  font-size: 32rpx;
+}
+.dataList .list .moneyData{
+  flex:1;
+  text-align: center;
+}

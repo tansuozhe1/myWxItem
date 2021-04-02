@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/bookkeeping/bookkeeping",
+    "pages/mine/mine",
+    "pages/currentCount/currentCount",
+    "pages/edit/edit",
+    "pages/chart/chart"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#5fb7df",
+    "navigationBarTitleText": "TT来记账",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#5fb7df",
+    "list": [
+      {
+        "pagePath": "pages/bookkeeping/bookkeeping",
+        "text": "记账",
+        "iconPath": "images/bookkeeping.png",
+        "selectedIconPath": "images/bookkeeping-active.png"
+      },
+      {
+        "pagePath": "pages/currentCount/currentCount",
+        "text": "查看流水",
+        "iconPath": "images/account.png",
+        "selectedIconPath": "images/account-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "年度账单",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "images/chart.png",
+        "selectedIconPath": "images/chart-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-active.png"
+      }
+    ]
+  }
+}

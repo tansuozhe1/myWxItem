@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../components/ec-canvas/ec-canvas",
+    "selectType-items":"../../components/selectType-items/selectType-items"
+  }
+}

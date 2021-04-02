@@ -1,0 +1,99 @@
+/**echart index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.chart .top-nav{
+  height:160rpx;
+  background-color:#5fb7df;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart .top-nav .search{
+  display:flex;
+  justify-content: space-between;
+  width: 90%;
+  height:60rpx;
+  position: relative;
+}
+.chart .top-nav .search .search-box{
+  width: 70%;
+  background-color:#fff;
+  border-radius:40rpx;
+}
+.chart .top-nav .search .search-box .picker-box{
+  position:absolute;
+  left:30rpx;
+  top:6rpx;
+  color:#535353e8;
+  width: 65%;
+
+}
+
+.chart .top-nav .search .search-btn{
+  width: 25%;
+  border-radius: 16rpx;
+  background-color:#fff;
+  color:#535353e8;
+  text-align: center;
+  height:60rpx;
+  line-height:60rpx;
+}
+
+/* 月总收支盒子 */
+.chart .budget-box{
+  width: 100%;
+  height:120rpx;
+  background-color:#fff;
+  display:flex;
+  border-bottom:2rpx solid #ccc;
+}
+.chart .budget-box .income-box{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right:2rpx solid #ccc;
+}
+.chart .budget-box .income-box .month-income{
+  border-radius:20rpx;
+  display: inline-block;
+  padding-left:20rpx;
+  padding-right:20rpx;
+}
+.chart .budget-box .income-box .month-income .text{
+  text-align: center;
+}
+.chart .budget-box .income-box .month-income .number{
+  color:red;
+  font-size: 36rpx;
+}
+.chart .budget-box .outcome-box{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart .budget-box .outcome-box .month-outcome{
+  border-radius:20rpx;
+  display: inline-block;
+}
+.chart .budget-box .outcome-box .month-outcome .text{
+  text-align: center;
+}
+.chart .budget-box .outcome-box .month-outcome .number{
+  color:green;
+  font-size: 36rpx;
+}
+.active{
+  background:#83ebeb;
+}
+
+.chart .echart-pie{
+  margin:40rpx 0rpx;
+  height:720rpx;
+  background:#fff;
+}

@@ -1,0 +1,126 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/4 上午9:48:41
+使用方法：
+在 E:\HTML学习资料\微信小程序\TT_come_Bookkeeping\miniprogram\pages\bookkeeping\bookkeeping.wxml 引入模板
+
+```
+
+```
+
+在 E:\HTML学习资料\微信小程序\TT_come_Bookkeeping\miniprogram\pages\bookkeeping\bookkeeping.wxss 中引入样式
+```
+
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="account-box">
+      <view class="top-box"></view>
+      <view class="bookkeeping-bg">
+        <view class="title" style="border: none;">
+          <view class="income active sk-transparent sk-text-23-3333-313 sk-text" data-index="0" style="background-position-x: 50%;">支出</view>
+          <view class="income sk-transparent sk-text-23-3333-874 sk-text" data-index="1" style="background-position-x: 50%;">收入</view>
+        </view>
+        <view class="type-item">
+          <swiper circular="true" class="swiper-item-box" indicator-active-color="#5fb7df" indicator-color="#ccc" indicator-dots="true" current="0" autoplay="false">
+            <swiper-item class="swiper-items" style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-109 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-665 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-12 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-579 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-668 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-179 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-861 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-36 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-941 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+              <view class="swiper-item">
+                <view class="icon">
+                  <image class="auto-img sk-image"></image>
+                </view>
+                <view class="text sk-transparent sk-text-14-2857-778 sk-text" style="background-position-x: 50%;">餐饮</view>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+      </view>
+      <view class="payType">
+        <view class="title sk-transparent sk-text-23-3333-885 sk-text" style="border: none;">账户选择</view>
+        <view class="content">
+          <view class="pay-item sk-transparent sk-text-26-6667-457 sk-text" data-selectindex="0" style="background-position-x: 50%;">现金</view>
+          <view class="pay-item sk-transparent sk-text-26-6667-531 sk-text" data-selectindex="1" style="background-position-x: 50%;">支付宝</view>
+          <view class="pay-item sk-transparent sk-text-26-6667-34 sk-text" data-selectindex="2" style="background-position-x: 50%;">微信</view>
+          <view class="pay-item sk-transparent sk-text-26-6667-722 sk-text" data-selectindex="3" style="background-position-x: 50%;">信用卡</view>
+          <view class="pay-item sk-transparent sk-text-26-6667-478 sk-text" data-selectindex="4" style="background-position-x: 50%;">储蓄卡</view>
+        </view>
+      </view>
+      <view class="date-account">
+        <view class="date" style="border: none;">
+          <view class="date-text sk-transparent sk-text-23-3333-177 sk-text">日期</view>
+          <view data-key="currentDate" end="2050-12-31" mode="date" start="2015-09-01" class="sk-image">
+            <view class="picker abc sk-transparent"></view>
+          </view>
+        </view>
+        <view class="account" style="border: none;">
+          <view class="account-text sk-transparent sk-text-23-3333-224 sk-text">金额</view>
+          <view class="account-content">
+            <view class="weui-input sk-image" data-key="money" maxlength="12" placeholder="请输入金额" placeholder-class="placeholder-name" type="digit" value="true"></view>
+          </view>
+        </view>
+        <view class="remark">
+          <view class="remark-text sk-transparent sk-text-27-1429-615 sk-text">备注</view>
+          <view class="remark-content">
+            <view class="textArea sk-image" data-key="comment" maxlength="28" placeholder="true" value="true"></view>
+          </view>
+        </view>
+      </view>
+      <view class="btn sk-transparent sk-text-20-0000-327 sk-text" style="background-position-x: 50%;">完成</view>
+    </view>
+  </view>
+</template>
